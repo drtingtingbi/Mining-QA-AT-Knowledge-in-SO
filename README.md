@@ -28,11 +28,44 @@ comparises the binary classification results of six maching learning methods.
 - 7. Architectural posts.xlsx
 comparises the architecturel posts for dictionary training that crawled from Stack Overflow.
 
-# Code\
+# Code
 Crawler for archietctural posts.py 
 for mining architectural posts and other potential QA-AT posts.
 
 experiments.py
 for running the classification experiments.
+
+# Experiment environment and the used package 
+Python 3.7
+
+boto==2.49.0
+boto3==1.14.20
+botocore==1.17.20
+certifi==2020.6.20
+chardet==3.0.4
+click==7.1.2
+Cython==0.29.14
+docutils==0.15.2
+gensim==3.8.3
+idna==2.10
+info-gain==1.0.1
+jmespath==0.10.0
+joblib==0.16.0
+nltk==3.5
+numpy==1.19.0
+pandas==1.0.5
+python-dateutil==2.8.1
+pytz==2020.1
+regex==2020.6.8
+requests==2.24.0
+s3transfer==0.3.3
+scikit-learn==0.23.1
+scipy==1.5.1
+six==1.15.0
+smart-open==2.1.0
+threadpoolctl==2.1.0
+tqdm==4.47.0
+urllib3==1.25.9
+xlrd==1.2.0
 
 
