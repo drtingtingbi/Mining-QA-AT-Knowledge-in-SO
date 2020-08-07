@@ -28,6 +28,30 @@ comprises the architectural posts for dictionary training that crawled from Stac
 
 # Experiment replication steps
 
+Step 1: Data pre-processing.  (input: Data Item 1)
+
+Input: Training database (Data item 1).
+
+Methods: (1) ToKenization, (2) Stop words Removal and (3) Stemming.
+
+Step 2: Training classifiers 
+
+Input: The processed training dataset.
+Feature selection methods: Word2vec, TF-IDF
+Machine Learning methods: Support Vector Machine (SVM), Bayes, Decision Tree (DT), Logistic Regression (LR), Random Forest (RF), and Bagging
+
+Step 3: Dictionary-based QA-AT classifier training.
+
+Input: Architectural posts + Training dataset (Data items 1 and 7)
+3.1. Set 1: All terms from architectural posts plus all terms from training dataset.
+3.2. Using Word2vec to train Set 1.
+3.3. Calculating the similarities between the QA and AT terms that we manually identified (Data item 2 and 3) and the terms in Set 1.
+Method: word2vec.similarty by word(t)
+3.4 Using information gain ratio to filter terms with value > 0.350
+Method: Information gain ratio
+Output: the dictionary (unseen but relevant QA -AT terms).
+3.5 Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
+ 
 
 
 # Code
