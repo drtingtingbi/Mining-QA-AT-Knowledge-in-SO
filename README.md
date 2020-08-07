@@ -2,9 +2,7 @@
 
 Data and results of the experiment and data analysis:
 
-1. Training data for classifier.xlsx
-
-comparises 1165 QA-AT psost (with URL links) and 1200 non QA-AT posts collected from Stack Overflow.
+1. Training data for classifier.xlsx comparises 1165 QA-AT psost (with URL links) and 1200 non QA-AT posts collected from Stack Overflow.
 
 
 - 2. AT related terms.pdf 
