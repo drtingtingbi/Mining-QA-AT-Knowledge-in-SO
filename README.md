@@ -27,8 +27,7 @@ comprises the binary classification results of six machine learning methods.
 comprises the architectural posts for dictionary training that crawled from Stack Overflow.
 
 # Code
-Crawler for archietctural posts.py 
-for mining architectural posts and other potential QA-AT posts.
+Crawler for mining archietctural architectural posts and other potential QA-AT posts.
 
 experiments.py
 for running the classification experiments.
