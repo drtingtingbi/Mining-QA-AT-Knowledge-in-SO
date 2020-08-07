@@ -36,7 +36,7 @@ Crawler for mining archietctural architectural posts and other potential QA-AT p
 experiments.py
 for running the classification experiments.
 
-# Experiment environment and the used package 
+# Experiment environment and the used packages
 Python 3.7
 
 boto==2.49.0
