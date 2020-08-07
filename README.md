@@ -1,6 +1,6 @@
 # File organization
 
-Data and results of the experiment and data analysis\
+Data and results of the experiment and data analysis:
 
 1. Training data for classifier.xlsx
 
