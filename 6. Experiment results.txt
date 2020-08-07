@@ -1,0 +1,57 @@
+C:\Users\Adminstrator\PycharmProjects\decision_classification\venv\Scripts\python.exe C:/Users/Adminstrator/PycharmProjects/decision_classification/code/experiments.py
+
+ML:SVM
+TP: 1058 FP: 4 TN: 1416 FN: 104
+precision: 0.996
+recall: 0.910
+f1-score: 0.951
+
+
+ML:LR
+TP: 988 FP: 0 TN: 1420 FN: 174
+precision: 1.000
+recall: 0.850
+f1-score: 0.919
+
+
+
+ML:DT
+TP: 1020 FP: 3 TN: 1417 FN: 142
+precision: 0.997
+recall: 0.878
+f1-score: 0.934
+
+
+LR
+TP: 856 FP: 9 TN: 1411 FN: 306
+precision: 0.990
+recall: 0.737
+f1-score: 0.845
+
+
+
+
+Bayes
+TP: 903 FP: 20 TN: 1400 FN: 259
+precision: 0.978
+recall: 0.777
+f1-score: 0.866
+
+
+
+Bagging
+TP: 860 FP: 15 TN: 1405 FN: 302
+precision: 0.983
+recall: 0.740
+f1-score: 0.844
+
+
+RF
+TP: 1018 FP: 23 TN: 1397 FN: 144
+precision: 0.978
+recall: 0.876
+f1-score: 0.924
+
+
+
+Process finished with exit code 0
