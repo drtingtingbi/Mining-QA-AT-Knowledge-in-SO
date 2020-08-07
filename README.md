@@ -28,7 +28,7 @@ comparises the binary classification results of six maching learning methods.
 - 7. Architectural posts.xlsx
 comparises the architecturel posts for dictionary training that crawled from Stack Overflow.
 
-Code\
+# Code\
 Crawler for archietctural posts.py 
 for mining architectural posts and other potential QA-AT posts.
 
