@@ -26,6 +26,10 @@ comprises the binary classification results of six machine learning methods.
 7. Architectural posts.xlsx
 comprises the architectural posts for dictionary training that crawled from Stack Overflow.
 
+# Experiment replication steps
+
+
+
 # Code
 Crawler for mining archietctural architectural posts and other potential QA-AT posts.
 
