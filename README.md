@@ -21,3 +21,36 @@ We analyzed and coded the considerations discussed in QA-AT posts and the relati
 Particularly, the relationships between ATs and QAs can be found in the group named "ATs->QAs" in the coding results. 
 The file can be opened by MAXQDA 2020 or higher versions, which are available at https://www.maxqdacom/ for download. 
 You may also use the free 14-day trial version of MAXQDA 2018, which is available at https://www.maxqda.com/trial for download.
+
+
+Using package:
+Python 3.7
+boto==2.49.0
+boto3==1.14.20
+botocore==1.17.20
+certifi==2020.6.20
+chardet==3.0.4
+click==7.1.2
+Cython==0.29.14
+docutils==0.15.2
+gensim==3.8.3
+idna==2.10
+info-gain==1.0.1
+jmespath==0.10.0
+joblib==0.16.0
+nltk==3.5
+numpy==1.19.0
+pandas==1.0.5
+python-dateutil==2.8.1
+pytz==2020.1
+regex==2020.6.8
+requests==2.24.0
+s3transfer==0.3.3
+scikit-learn==0.23.1
+scipy==1.5.1
+six==1.15.0
+smart-open==2.1.0
+threadpoolctl==2.1.0
+tqdm==4.47.0
+urllib3==1.25.9
+xlrd==1.2.0
