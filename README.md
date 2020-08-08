@@ -42,7 +42,7 @@ Step 2: Training classifiers
 
 * Input: The pre-processed training dataset (output of Step 1).
 * Feature selection methods: Word2vec and TF-IDF
-* Machine Learning methods: Support Vector Machine (SVM), Bayes, Decision Tree (DT), Logistic Regression (LR), Random Forest (RF), and Bagging
+* Machine learning methods: Support Vector Machine (SVM), Bayes, Decision Tree (DT), Logistic Regression (LR), Random Forest (RF), and Bagging
 * Output: the binary classification of QA-AT posts and non QA-AT posts (Data item 6).
 
 Step 3: Dictionary-based QA-AT classifier training.
@@ -50,22 +50,22 @@ Step 3: Dictionary-based QA-AT classifier training.
 * Input: Architectural posts + Training dataset (Data items 1 and 7)
 * Output: Data items 4 and 6.
 
-  - Step 3.1. Set 1: All terms from architectural posts plus all terms from the training dataset.
+ - Step 3.1. Set 1: All terms from architectural posts plus all terms from the training dataset.
     * Input: Set 1 = Architectural posts + Training dataset (Data items 1 and 7)
 
-  - Step 3.2. Using Word2vec to train Set 1.
+ - Step 3.2. Using Word2vec to train Set 1.
     * Output: vector of each term in Set 1.
 
-  - Step 3.3. Calculating the similarities between the QA and AT terms that we manually identified (Data items 2 and 3) and the terms in Set 1.
+ - Step 3.3. Calculating the similarities between the QA and AT terms that we manually identified (Data items 2 and 3) and the terms in Set 1.
     * Method: `word2vec.similarty by word(t)`
     * Output: similarities values between terms
 
-  - Step 3.4. Using information gain ratio to filter terms with value > 0.350
+ - Step 3.4. Using information gain ratio to filter terms with value > 0.350
     * Method: Information gain ratio
     * Output: the dictionary (unseen but relevant QA -AT terms) (Data item 4).
 
-  - Step 3.5. Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
-    * Step execution and Feature selection and Machine learning methods are the same to Step 2.
+ - Step 3.5. Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
+    * Step execution and the feature selection and machine learning methods are the same to Step 2.
     * Input: Data item 8.
     * Output: results of the experiment (Data item 6).
 
