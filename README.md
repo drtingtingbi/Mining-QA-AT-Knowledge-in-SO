@@ -55,10 +55,10 @@ Method: word2vec.similarty by word(t)
 
 3.4 Using information gain ratio to filter terms with value > 0.350
 Method: Information gain ratio
-Output: the dictionary (unseen but relevant QA -AT terms).
+Output: the dictionary (unseen but relevant QA -AT terms) (Data item 4).
 
 3.5 Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
- 
+
 
 
 # Code
@@ -70,9 +70,9 @@ for running the classification experiments.
 # Experiment environment and the used packages
 Python 3.7
 
-boto==2.49.0
+`boto==2.49.0`
 
-boto3==1.14.20
+`boto3==1.14.20
 
 botocore==1.17.20
 
