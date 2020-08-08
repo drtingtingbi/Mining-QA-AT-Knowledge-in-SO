@@ -72,6 +72,9 @@ Crawler for mining archietctural architectural posts and other potential QA-AT p
 experiments.py
 for running the classification experiments.
 
+Training the dictionary source code.py
+for training the dictionary to include more unseen but relevant QA and AT terms.
+
 # Experiment environment and the used packages
 Python 3.7 to run our souce codes.
 
