@@ -48,14 +48,17 @@ Step 2: Training classifiers
 Step 3: Dictionary-based QA-AT classifier training.
 
 * Input: Architectural posts + Training dataset (Data items 1 and 7)
-* Output: Data item 4.
+* Output: Data items 4 and 6.
 
   - Step 3.1. Set 1: All terms from architectural posts plus all terms from training dataset.
+    * Input: Set 1 = Architectural posts + Training dataset (Data items 1 and 7)
 
   - Step 3.2. Using Word2vec to train Set 1.
+    * Output : vector of each terms in Set 1.
 
   - Step 3.3. Calculating the similarities between the QA and AT terms that we manually identified (Data item 2 and 3) and the terms in Set 1.
-    * Method: word2vec.similarty by word(t)
+    * Method: `word2vec.similarty by word(t)`
+    * Output: similarities values between terms
 
   - Step 3.4 Using information gain ratio to filter terms with value > 0.350
     * Method: Information gain ratio
