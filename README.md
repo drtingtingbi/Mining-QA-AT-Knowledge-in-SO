@@ -60,11 +60,11 @@ Step 3: Dictionary-based QA-AT classifier training.
     * Method: `word2vec.similarty by word(t)`
     * Output: similarities values between terms
 
-  - Step 3.4 Using information gain ratio to filter terms with value > 0.350
+  - Step 3.4. Using information gain ratio to filter terms with value > 0.350
     * Method: Information gain ratio
     * Output: the dictionary (unseen but relevant QA -AT terms) (Data item 4).
 
-  - Step 3.5 Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
+  - Step 3.5. Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
     * Step execution and Feature selection and Machine learning methods are same to Step 2.
     * Input: Data item 8.
     * Output: results of experiment (Data item 6).
