@@ -62,7 +62,7 @@ Step 3: Dictionary-based QA-AT classifier training.
   * Output: the dictionary (unseen but relevant QA -AT terms) (Data item 4).
 
  - 3.5 Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
-  * Step and Methods are same to Step 2.
+  * Step execution and Feature selection and Machine learning methods are same to Step 2.
   * Input: Data item 8.
   * Output: results of experiment (Data item 6).
 
