@@ -72,18 +72,18 @@ Step 3: Dictionary-based QA-AT classifier training.
 
 
 # Code
-* `Crawler.py` for mining archietctural architectural posts and other potential QA-AT posts.
+* `Crawler for architectural posts.py` for mining archietctural architectural posts and other potential QA-AT posts.
 
-* `experiments.py'
+* `experiments.py`
 for running the classification experiments.
 
 * `Training the dictionary source code.py`
 for training the dictionary to include more unseen but relevant QA and AT terms.
 
-# Experiment environment and the used packages
+# Experimen environment and the used packages
 * Python 3.7 to run our souce codes.
 
-* Required packages:
+* Required packages and their versions:
 
 `boto==2.49.0`
 
