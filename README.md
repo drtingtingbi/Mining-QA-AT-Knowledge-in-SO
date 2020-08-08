@@ -62,6 +62,7 @@ Output: the dictionary (unseen but relevant QA -AT terms) (Data item 4).
 
 3.5 Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
 Step and Methods are same to Step 2.
+Input: Data iterm 8.
 Output: results of experiment (Data item 6).
 
 
