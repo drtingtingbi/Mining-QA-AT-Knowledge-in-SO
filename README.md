@@ -26,6 +26,9 @@ comprises the binary classification results of six machine learning methods.
 7. Architectural posts.xlsx
 comprises the architectural posts for dictionary training that crawled from Stack Overflow.
 
+8. Uising dic training data for classifier.xlsx
+comprises original training dataset (data item 1) and unseen but QA and AT relevant terms of the trained dictionary (date item 4). 
+
 # Experiment replication steps
 
 Step 1: Data pre-processing. 
@@ -58,6 +61,8 @@ Method: Information gain ratio
 Output: the dictionary (unseen but relevant QA -AT terms) (Data item 4).
 
 3.5 Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
+Step and Methods are same to Step 2.
+Output: results of experiment (Data item 6).
 
 
 
