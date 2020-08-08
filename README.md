@@ -36,34 +36,35 @@ Step 1: Data pre-processing.
 * Input: Training database (Data item 1).
 * Output: The pre-processed training dataset.
 
-Methods: (1) Tokenization, (2) Stop words removal, and (3) Stemming.
+* Methods: (1) Tokenization, (2) Stop words removal, and (3) Stemming.
 
 Step 2: Training classifiers 
 
-Input: The pre-processed training dataset (output of Setp 1).
-Feature selection methods: Word2vec and TF-IDF
-Machine Learning methods: Support Vector Machine (SVM), Bayes, Decision Tree (DT), Logistic Regression (LR), Random Forest (RF), and Bagging
-Output: the binary classification of QA-AT posts and non QA-AT posts (Data item 6).
+* Input: The pre-processed training dataset (output of Setp 1).
+* Feature selection methods: Word2vec and TF-IDF
+* Machine Learning methods: Support Vector Machine (SVM), Bayes, Decision Tree (DT), Logistic Regression (LR), Random Forest (RF), and Bagging
+* Output: the binary classification of QA-AT posts and non QA-AT posts (Data item 6).
 
 Step 3: Dictionary-based QA-AT classifier training.
 
-Input: Architectural posts + Training dataset (Data items 1 and 7)
+* Input: Architectural posts + Training dataset (Data items 1 and 7)
+* Output: Data item 4.
 
 3.1. Set 1: All terms from architectural posts plus all terms from training dataset.
 
 3.2. `Using Word2vec to train Set 1.`
 
 3.3. Calculating the similarities between the QA and AT terms that we manually identified (Data item 2 and 3) and the terms in Set 1.
-Method: word2vec.similarty by word(t)
+  * Method: word2vec.similarty by word(t)
 
 3.4 Using information gain ratio to filter terms with value > 0.350
-Method: Information gain ratio
-Output: the dictionary (unseen but relevant QA -AT terms) (Data item 4).
+  * Method: Information gain ratio
+  * Output: the dictionary (unseen but relevant QA -AT terms) (Data item 4).
 
 3.5 Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
-Step and Methods are same to Step 2.
-Input: Data iterm 8.
-Output: results of experiment (Data item 6).
+  * Step and Methods are same to Step 2.
+  * Input: Data iterm 8.
+  * Output: results of experiment (Data item 6).
 
 
 
