@@ -72,7 +72,7 @@ Step 3: Dictionary-based QA-AT classifier training.
 
 
 # Code
-* `Crawlerpy` for mining archietctural architectural posts and other potential QA-AT posts.
+* `Crawler.py` for mining archietctural architectural posts and other potential QA-AT posts.
 
 * 'experiments.py'
 for running the classification experiments.
