@@ -33,11 +33,11 @@ Step 1: Data pre-processing.
 Input: Training database (Data item 1).
 Output: The pre-processed training dataset.
 
-Methods: (1) Tokenization, (2) Stop words removal and (3) Stemming.
+Methods: (1) Tokenization, (2) Stop words removal, and (3) Stemming.
 
 Step 2: Training classifiers 
 
-Input: The pre-processed training dataset.
+Input: The pre-processed training dataset (output of Setp 1).
 Feature selection methods: Word2vec and TF-IDF
 Machine Learning methods: Support Vector Machine (SVM), Bayes, Decision Tree (DT), Logistic Regression (LR), Random Forest (RF), and Bagging
 Output: the binary classification of QA-AT posts and non QA-AT posts.
