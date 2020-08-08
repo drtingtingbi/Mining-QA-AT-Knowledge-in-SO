@@ -78,9 +78,9 @@ Training the dictionary source code.py
 for training the dictionary to include more unseen but relevant QA and AT terms.
 
 # Experiment environment and the used packages
-Python 3.7 to run our souce codes.
+* Python 3.7 to run our souce codes.
 
-Required packages:
+* Required packages:
 
 `boto==2.49.0`
 
