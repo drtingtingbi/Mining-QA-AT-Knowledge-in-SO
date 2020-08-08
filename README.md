@@ -81,7 +81,7 @@ for running the classification experiments.
 for training the dictionary to include more unseen but relevant QA and AT terms.
 
 # Experimen environment and the used packages
-* Python 3.7 to run our souce codes.
+* Python 3.7 to run our souce code.
 
 * Required packages and their versions:
 
