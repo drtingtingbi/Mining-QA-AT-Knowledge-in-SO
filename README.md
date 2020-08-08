@@ -68,7 +68,9 @@ experiments.py
 for running the classification experiments.
 
 # Experiment environment and the used packages
-Python 3.7
+Python 3.7 to run our souce codes.
+
+Required packages:
 
 `boto==2.49.0`
 
