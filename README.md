@@ -26,7 +26,7 @@ comprises the binary classification results of six machine learning methods.
 7. `Architectural posts.xlsx`
 comprises the architectural posts for dictionary training that crawled from Stack Overflow.
 
-8. `Using dict training data for classifier.xlsx`
+8. `Using dic training data for classifier.xlsx`
 comprises original training dataset (data item 1) and unseen but QA and AT relevant terms of the trained dictionary (date item 4). 
 
 # Experiment replication steps
