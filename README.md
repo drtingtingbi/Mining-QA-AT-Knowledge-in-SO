@@ -1,32 +1,32 @@
 # File organization
 
-Data and results of the experiment and data analysis:
+Data item and results of the experiment and data analysis:
 
-1. Training data for classifier.xlsx comprises 1165 QA-AT posts (with URL links) and 1200 non QA-AT posts collected from Stack Overflow.
+1. `Training data for classifier.xlsx` comprises 1165 QA-AT posts (with URL links) and 1200 non QA-AT posts collected from Stack Overflow.
 
 
-2. AT related terms.pdf 
+2. `AT related terms.pdf` 
 comprises AT names and their related terms. AT names are used for searching QA-AT posts, 
 and AT related terms are used for dictionary training.  
 
 
-3. QA related term.zip
+3. `QA related term.zip`
 comprises QAs and their related terms. QAs are used for eight high-level QAs identification, 
 and QA related terms are used for dictionary training. 
 
 
-4. The output of the trained dictionary.pdf 
+4. `The output of the trained dictionary.pdf` 
 comprises the sensitive terms of QAs and ATs in the dictionary trained by the 1741 architectural posts.  
 
-5. QA-AT posts labelling and encoding.mx20 is the results of QA-AT posts labelling and encoding that were analyzed by the MAXQDA tool. We analyzed and coded the considerations discussed in QA-AT posts and the relationships between QAs and ATs. Particularly, the relationships between ATs and QAs can be found in the group named "ATs->QAs" in the coding results. The file can be opened by MAXQDA 2020, which are available at https://www.maxqda.com/ for download. You may also use the free 14-day trial version of MAXQDA 2020, which is available at https://www.maxqda.com/trial for download.
+5. `QA-AT posts labelling and encoding.mx20` is the results of QA-AT posts labelling and encoding that were analyzed by the MAXQDA tool. We analyzed and coded the considerations discussed in QA-AT posts and the relationships between QAs and ATs. Particularly, the relationships between ATs and QAs can be found in the group named "ATs->QAs" in the coding results. The file can be opened by MAXQDA 2020, which are available at https://www.maxqda.com/ for download. You may also use the free 14-day trial version of MAXQDA 2020, which is available at https://www.maxqda.com/trial for download.
 
-6. Experiment result.txt
+6. `Experiment result.txt`
 comprises the binary classification results of six machine learning methods.
 
-7. Architectural posts.xlsx
+7. `Architectural posts.xlsx`
 comprises the architectural posts for dictionary training that crawled from Stack Overflow.
 
-8. Uising dic training data for classifier.xlsx
+8. `Using dictionary training data for classifier.xlsx`
 comprises original training dataset (data item 1) and unseen but QA and AT relevant terms of the trained dictionary (date item 4). 
 
 # Experiment replication steps
@@ -40,7 +40,7 @@ Step 1: Data pre-processing.
 
 Step 2: Training classifiers 
 
-* Input: The pre-processed training dataset (output of Setp 1).
+* Input: The pre-processed training dataset (output of Step 1).
 * Feature selection methods: Word2vec and TF-IDF
 * Machine Learning methods: Support Vector Machine (SVM), Bayes, Decision Tree (DT), Logistic Regression (LR), Random Forest (RF), and Bagging
 * Output: the binary classification of QA-AT posts and non QA-AT posts (Data item 6).
@@ -50,18 +50,18 @@ Step 3: Dictionary-based QA-AT classifier training.
 * Input: Architectural posts + Training dataset (Data items 1 and 7)
 * Output: Data item 4.
 
-- Step 3.1. Set 1: All terms from architectural posts plus all terms from training dataset.
+ - Step 3.1. Set 1: All terms from architectural posts plus all terms from training dataset.
 
-- Step 3.2. `Using Word2vec to train Set 1.`
+ - Step 3.2. Using Word2vec to train Set 1.
 
-- Step 3.3. Calculating the similarities between the QA and AT terms that we manually identified (Data item 2 and 3) and the terms in Set 1.
+ - Step 3.3. Calculating the similarities between the QA and AT terms that we manually identified (Data item 2 and 3) and the terms in Set 1.
   * Method: word2vec.similarty by word(t)
 
-- Step 3.4 Using information gain ratio to filter terms with value > 0.350
+ - Step 3.4 Using information gain ratio to filter terms with value > 0.350
   * Method: Information gain ratio
   * Output: the dictionary (unseen but relevant QA -AT terms) (Data item 4).
 
-- 3.5 Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
+ - 3.5 Putting the unseen but relevant QA-AT terms to strengthen the training classifiers.
   * Step and Methods are same to Step 2.
   * Input: Data item 8.
   * Output: results of experiment (Data item 6).
