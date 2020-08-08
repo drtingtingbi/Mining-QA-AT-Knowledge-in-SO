@@ -33,8 +33,8 @@ comprises original training dataset (data item 1) and unseen but QA and AT relev
 
 Step 1: Data pre-processing. 
 
-Input: Training database (Data item 1).
-Output: The pre-processed training dataset.
+* Input: Training database (Data item 1).
+* Output: The pre-processed training dataset.
 
 Methods: (1) Tokenization, (2) Stop words removal, and (3) Stemming.
 
