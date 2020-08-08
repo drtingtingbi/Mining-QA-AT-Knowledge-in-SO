@@ -40,17 +40,18 @@ Step 2: Training classifiers
 Input: The pre-processed training dataset (output of Setp 1).
 Feature selection methods: Word2vec and TF-IDF
 Machine Learning methods: Support Vector Machine (SVM), Bayes, Decision Tree (DT), Logistic Regression (LR), Random Forest (RF), and Bagging
-Output: the binary classification of QA-AT posts and non QA-AT posts.
+Output: the binary classification of QA-AT posts and non QA-AT posts (Data item 6).
 
 Step 3: Dictionary-based QA-AT classifier training.
 
 Input: Architectural posts + Training dataset (Data items 1 and 7)
+
 3.1. Set 1: All terms from architectural posts plus all terms from training dataset.
 
 3.2. Using Word2vec to train Set 1.
 
 3.3. Calculating the similarities between the QA and AT terms that we manually identified (Data item 2 and 3) and the terms in Set 1.
-Method: word2vec.similarty by word(t)
+Method: '''word2vec.similarty by word(t)'''
 
 3.4 Using information gain ratio to filter terms with value > 0.350
 Method: Information gain ratio
