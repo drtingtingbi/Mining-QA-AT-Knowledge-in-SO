@@ -1,6 +1,6 @@
 # File organization
 
-Data item and results of the experiment and data analysis:
+Data items and results of the experiment and data analysis:
 
 1. `Training data for classifier.xlsx` comprises 1165 QA-AT posts (with URL links) and 1200 non QA-AT posts collected from Stack Overflow.
 
@@ -26,7 +26,7 @@ comprises the binary classification results of six machine learning methods.
 7. `Architectural posts.xlsx`
 comprises the architectural posts for dictionary training that crawled from Stack Overflow.
 
-8. `Using dictionary training data for classifier.xlsx`
+8. `Using dict training data for classifier.xlsx`
 comprises original training dataset (data item 1) and unseen but QA and AT relevant terms of the trained dictionary (date item 4). 
 
 # Experiment replication steps
