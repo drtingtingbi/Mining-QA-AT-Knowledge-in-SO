@@ -31,21 +31,21 @@ comprises original training dataset (data item 1) and unseen but QA and AT relev
 
 # Experiment replication steps
 
-Step 1: Data pre-processing. 
+Step 1: Data pre-processing (Using souce code `experiments.py` listed in the Code section). 
 
 * Input: Training database (Data item 1).
 * Output: The pre-processed training dataset.
 
 * Methods: (1) Tokenization, (2) Stop words removal, and (3) Stemming.
 
-Step 2: Training classifiers 
+Step 2: Training classifiers (Using souce code `experiments.py` listed in the Code section).
 
 * Input: The pre-processed training dataset (output of Step 1).
 * Feature selection methods: Word2vec and TF-IDF
 * Machine learning methods: Support Vector Machine (SVM), Bayes, Decision Tree (DT), Logistic Regression (LR), Random Forest (RF), and Bagging
 * Output: the binary classification of QA-AT posts and non QA-AT posts (Data item 6).
 
-Step 3: Dictionary-based QA-AT classifier training.
+Step 3: Dictionary-based QA-AT classifier training (Uing souce code `Training the dictionary source code.py` in teh Code section).
 
 * Input: Architectural posts + Training dataset (Data items 1 and 7)
 * Output: Data items 4 and 6.
